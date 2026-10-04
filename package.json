@@ -1,0 +1,19 @@
+{
+  "name": "ybg",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Your Beautiful Garden — an offline-first garden companion",
+  "packageManager": "pnpm@12.9.1",
+  "engines": {
+    "node": ">=24.13.0 <25"
+  },
+  "scripts": {
+    "start": "pnpm --filter @ybg/mobile start",
+    "android": "pnpm --filter @ybg/mobile android",
+    "ios": "pnpm --filter @ybg/mobile ios",
+    "web": "pnpm --filter @ybg/mobile web",
+    "lint": "pnpm -r --if-present lint",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "check": "pnpm lint && pnpm typecheck"
+  }
+}

@@ -1,0 +1,11 @@
+packages:
+  - mobile
+  - backend
+  - packages/*
+
+# Match Expo's conservative pnpm setup; no custom Metro resolver needed.
+nodeLinker: hoisted
+
+# Resolver bindings arrive as optional prebuilt packages; skip the fallback installer.
+allowBuilds:
+  unrs-resolver: false
